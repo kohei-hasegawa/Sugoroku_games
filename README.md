@@ -1,5 +1,5 @@
 # Sugoroku_games
-Version 0.2  
+Version 0.3  
 
 ##概要
 C++で作られたCUIのすごろくゲーム  。

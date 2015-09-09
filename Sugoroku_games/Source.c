@@ -40,13 +40,13 @@ int main(void){
 		}
 		//現在地をマーク
 		event[y][x] = 1;
-		
-		//描写する
-		draw();
 
 		//現在のステイタスを表示
 		printf("\n\n＝＝ 現在 %d マス目 ＝＝\n", pos);
 		printf(" Now Position : (%d.%d)\n",y,x);
+
+		//描写する
+		draw();
 
 		//データを初期化する設定の場合のみ動く
 		if (cash == 0){
