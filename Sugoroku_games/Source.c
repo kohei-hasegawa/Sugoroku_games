@@ -12,11 +12,17 @@ int main(void){
 	int x=0,y=0,pos=0;
 	int cash = 0;
 	int position[2];
-	
-	printf("** Sugoroku Games **\n\n");
-	printf(" > コマの履歴を表示しますか？(true:1 , false:0):");
-	scanf("%d",&cash);
 
+	printf("** Sugoroku Games **\n\n");
+
+	//コマンドの履歴を表示するかしないかの設定
+	do{
+		printf(" > コマの履歴を表示しますか？(true:1 , false:0):");
+		scanf("%d", &cash);
+		if (cash > 1 || cash <0){
+			printf("  >> 数字は0または1のみで入力してください。\n\n");
+		}
+	} while (cash > 1 || cash <0);
 
 	printf("\n > 初期化したフィールドを表示します...\n");
 
